@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <div>
+<h1> DOM </h1>
+<div id="form-content" class="content">
+<label for="fist-name">First Name</label>
+<input type="text" id="fist-name" />
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" />
+<label for="email">Email</label>
+<input type="text" id="email" />
+</div>
+<div id="main-content" class="content">
+<p class="render"> First Name : Alex</p>
+<p class="render" id="lastName">Last Name: Bank</p>
+<p class="render"> Email : alexbank@example.com</p>
+<p class="render"> Country : Pakistan </p>
+<p class="render"> contact : +92 300 1234567</p>
+</div>
+</div>
+
+<!-- <div class="container">
+ 
+
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header">
+          <h4 class="modal-title">UPDATE RECORD</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <div class="modal-body">
+
+          <div class="form-group">
+            <label>Index</label>
+            
+            <input type="" name="" class="form-control" id="index">
+          </div>
+
+           <div class="form-group">
+            <label class="">Name</label>
+            <input type="" name="" class="form-control" id="name">
+          </div>
+
+           <div class="form-group">
+            
+            <label>Class</label>
+            <input type="" name="" class="form-control" id="class">
+          </div>
+        </div>
+        
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+
+ <center>
+ 
+
+
+
+ <table class="table table-bordered table-striped col-lg-6 text-center mt-3" id="table">
+  <tr>
+
+  <th>index</th>
+
+  <th>Name</th>
+
+  <th>Class</th>
+
+ 
+  <td colspan="2" class="text-center font-weight-bold">Action</td>
+  
+  </tr>
+
+  <tr>
+    <td id="kas">0</td>
+    <td>John</td>
+    <td>10</td>    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+    <td> <input type="button"  onclick="UpdateRow();" data-toggle="modal" data-target="#myModal" id="edit" value="0">Update</td>
+
+   
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Doe</td>
+    <td>9</td>
+    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+    <td> <input type="button"  onclick="UpdateRow();" data-toggle="modal" data-target="#myModal" id="edit1" value="1">Update</td>
+
+
+   
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Mark</td>
+    <td>10</td>
+    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+    <td> <input type="button"  onclick="UpdateRow();" data-toggle="modal" data-target="#myModal" id="edit2" value="2">Update</td>
+
+   
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>James</td>
+    <td>8</td>
+    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+    <td> <input type="button"  onclick="UpdateRow();" data-toggle="modal" data-target="#myModal" id="edit3" value="3">Update</td>
+
+   
+  </tr>
+  
+
+ </table>
+ </center>
+ -->
+
+<script type="text/javascript">
+	
+
+  //Exercise 38-42 Task # 1
+
+  // function Power (a,b)
+  // {
+  // 	 var pw = Math.pow(a,b)
+  // 	document.write(pw)
+  // }
+
+  // Power (2,2)
+
+
+  //Exercise 38-42 Task # 2
+
+  // function LeapYear()
+  // {
+  // 	var lep_yer =  prompt('Enter your Year')
+  //   var lp =  (lep_yer % 100 ===0) ? (lep_yer % 400 ===0) : (lep_yer % 4 ===0)
+
+  // 	if (lp == true)
+  // 	{
+  //        alert(lep_yer +" Is Leap Year");
+
+
+  // 	}
+  // 	else
+  // 	{
+  //        alert(lep_yer +" Is Not Leap Year");
+
+
+  // 	}
+  // }
+
+  // LeapYear()
+
+
+
+  //Exercise 38-42 Task # 3
+
+  // function sidestriangle (a,b,c,S,area)
+  // {
+  	
+  	
+  // 	S = (a + b + c )/2
+  //  document.write(area = Math.sqrt(S*((S-a)*(S-b)*(S-c))))
+
+  // }
+
+  // sidestriangle(2,2,2)
+
+
+
+
+  //Exercise 38-42 Task # 4
+
+
+
+  //  var subject1 = 300, subject2 =300, subject3 = 200 ,recievemarks, total=1100, percentage, Average
+  //  recievemarks=  subject1 + subject2 + subject3
+
+
+  // function Students()
+  // {
+  	 
+  // 	  document.write("Total Marks is: "+recievemarks+"<br>")
+  // 	  Percentage()
+  //     Average()
+  	  
+  	  
+
+  // }
+
+  // function Percentage()
+  // {
+  // 	 document.write(("Total Percentage is: "+recievemarks/total*100)+"%"+"<br>")
+
+
+      
+  // }
+
+  // function Average()
+  // {
+  //     document.write(("Total Average is: "+recievemarks/total)+"<br>")
+  // }
+
+  //  Students()
+
+  //Exercise 38-42 Task # 5
+
+  // function ind()
+  // {
+  	
+  //     var i = "hello world"
+  //     var nmb =  i.indexOf("o")
+  //     document.write(nmb)
+  // }
+
+  // ind()
+
+
+  //Exercise 38-42 Task # 6
+
+  
+
+
+   
+  // var str=""
+
+
+  // function deletevowels(vw)
+  // {
+
+  //  for (var i = 0; i<vw.length; i++)
+  //  {
+
+
+   	
+ 	// if (vw.toString().length <2) 
+  //  	{
+  //       document.write('wrong')
+  //       break;
+  //  	}
+
+
+  //  	if (vw[i] != "a" &&  vw[i] != "e"  &&  vw[i] != "i"  && vw[i] != "o"  && vw[i] != "u" )
+  //  	 {
+  //  	 	 str += vw[i]
+  //  	 }	
+
+
+  //  }
+  //  return str
+
+  	
+  // }
+  // document.write(deletevowels("After Delete Remain Constant is ")+"<br>")
+
+
+
+
+
+//Exercise 38-42 Task # 7
+
+
+// function Occurrenceword (va) 
+
+// {
+//  var va_count = va.match(/e/g).length
+//  document.write(va+"<br>")
+//  document.write("There are " +va_count+ " Occurrence(s) of word 'Vowel' " +"e"+ "<br>")
+
+//   switch (va)
+//   {
+//   	case 1:
+
+//   	day = Occurrenceword()
+
+//   	break;
+
+//   }
+//   return day
+
+// }
+//   Occurrenceword("Pleases read this application and give me gratuity") 
+
+
+  
+//Exercise 38-42 Task # 8
+
+// Distance()
+// function Distance()
+// {
+
+// var kilometers1 
+// var kilometers2
+// var Meters = 1000
+// var centimeter = 10000
+// var feets = 3280
+// var inche = 39370.079
+
+// kilometers1 = prompt("Enter Your value In kilometers fisrt city")
+// kilometers2 = prompt("Enter Your value In kilometers second city")
+// var n=  kilometers1 - kilometers2
+
+// function meters()
+// {
+// 	 document.write("Distance Between Two City in meters is "+n  * Meters+"<br>")
+// }
+
+
+
+// function feet()
+// {
+// 	 document.write("Distance Between Two City in feets is "+n * feets+"<br>")
+	 
+// }
+
+// function inches()
+// {
+// 	 document.write("Distance Between Two City in inches is "+n  * inche+"<br>")
+	 
+// }
+
+// function centimeters()
+// {
+// 	 document.write("Distance Between Two City in centimeters is "+n  * centimeter+"<br>")
+	 
+// }
+ 
+// meters()
+// feet()
+// inches()
+// centimeters()
+
+// }
+
+
+
+//Exercise 38-42 Task # 9
+
+// function WokerSallery()
+// {
+
+
+// var sallery=12, Totalhour=41
+// hour = Totalhour -1
+
+//  if (Totalhour < 40)
+//  {
+ 	 
+//  	 alert(sallery*hour)
+//  }
+
+//  else if (Totalhour > 40)
+//  {
+//     alert(sallery*hour)
+//  }
+
+//  else if (hour)
+//  {
+//     alert(hour)
+ 	
+//  }
+// }
+//   WokerSallery()
+
+
+//Exercise 38-42 Task # 10
+
+
+// var amount,TenNotes = 10  ,FiftyNotes = 50 ,OneHunderedNotes = 100 
+
+// amount = parseInt(prompt("Enter amount to withdraw!","Please Enter Amout in Digits"))
+
+
+// document.write("Your Enter Amout Is: "+amount+"<br>")
+// document.write("Required Notes of hundred Is: "+ Math.floor(amount/OneHunderedNotes)+"<br>")
+// document.write("Required Notes of Fifty Is: "+ Math.floor(amount % FiftyNotes/TenNotes) +"<br>")
+// document.write("Required Notes of Ten Is: "+Math.floor(amount % OneHunderedNotes%FiftyNotes/TenNotes) +"<br>")
+
+
+
+//Exercise 43-48 Task # 1
+
+// <div class="container mt-3 " >
+
+//   <h4 class="text-primary ">Mobile Phone Lookup</h4>
+
+
+// <div class="d-flex justify-content-around mt-5 ">
+//  <a href="javascript:;"  onclick="al();"> 
+
+//  <figure> 
+//   <img src="mob1.jpeg" alt="" width="160" >
+//   <figurecaption >Nokia </figurecaption>
+//  </figure> 
+// </a>
+
+// <a href="javascript:;"  onclick="al();" >  
+//  <figure> 
+//   <img src="mob2.jpeg" alt="" width="260">
+//   <figurecaption>Oppo </figurecaption>
+//  </figure> 
+// </a>
+
+// <a href="javascript:;"  onclick="al();">  
+//  <figure> 
+//   <img src="mob3.jpeg" alt="" width="260">
+//   <figurecaption>Infinix </figurecaption>
+//  </figure> 
+// </a>
+
+// <a href="javascript:;"  onclick="al();">  
+//  <figure> 
+//   <img src="mob4.jpeg" alt="" width="260">
+//   <figurecaption>Vivo </figurecaption>
+//  </figure> 
+// </a>
+// </div>
+
+// </div>
+
+
+//  function al()
+// {
+//   alert('Thanks for purchase mobile from us')
+// }
+
+
+//Exercise 43-48 Task # 2
+
+// <center>
+// <table >
+//   <tr>
+
+//  <th>index</th>
+
+//  <th>Name</th>
+
+//  <th>Class</th>
+
+
+//  </tr>
+
+//  <tr>
+//    <td>0</td>
+//    <td>John</td>
+//    <td>10</td>
+//    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+   
+//  </tr>
+
+//  <tr>
+//    <td>1</td>
+//    <td>Doe</td>
+//    <td>9</td>
+//    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+
+   
+//  </tr>
+
+//  <tr>
+//    <td>3</td>
+//    <td>Mark</td>
+//    <td>10</td>
+//    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+   
+//  </tr>
+//  <tr>
+//    <td>4</td>
+//    <td>James</td>
+//    <td>8</td>
+//    <td> <input type="button" value="Delete" onclick="DeleteRow();"></td>
+   
+//  </tr>
+  
+
+// </table>
+// </center>
+
+
+// function DeleteRow()
+// {
+//   var td = event.target.parentNode
+//   var tr = td.parentNode
+//   tr.parentNode.removeChild(tr)
+// }
+
+
+//Exercise 43-48 Task # 3
+
+// <img src="mob3.jpeg" onmouseover="mouse_over()" onmouseout="mouse_in()" id="ms">
+// function mouse_over()
+// {
+
+//   document.getElementById('ms').src= "mob4.jpeg"
+
+// }
+
+// function mouse_in()
+// {
+
+//   document.getElementById('ms').src= "mob3.jpeg"
+
+// }
+
+
+
+//Exercise 43-48 Task # 4
+ 
+
+// <h4 class="text-center text-dark">Counter</h4>
+// <h1 class="text-primary text-center" id="count">0</h1>
+
+// <button onclick="counterfn();" class="btn btn-primary">Click To Increase </button>
+// <button onclick="counterfndec();" class="btn btn-danger">Click To Decrease</button>
+
+//  var counter = 0
+//  function counterfn()
+//  {
+//    counter +=1 
+
+//     document.getElementById('count').innerHTML = counter
+   
+//  }
+//  function counterfndec()
+//  {
+//     counter --
+
+//     document.getElementById('count').innerHTML = counter
+   
+//  }
+
+ 
+
+//Exercise 43-48 Task # 5
+
+
+//  <div class="container">
+//   <div class="m-auto col-lg-4">
+//     <form id="submit" >
+    
+//     <h1 class="text-center ">Sign Up Form</h1>
+//     <div>
+//       <label>Email</label>
+//       <input type="text" name="" class="form-control" id="txt1">
+//     </div>
+
+//     <div>
+//       <label>Password</label>
+//       <input type="text" name="" class="form-control" id="txt2">
+//     </div>
+
+
+//     <div>
+//       <label>Phone</label>
+//       <input type="text" name="" class="form-control" id="txt3">
+//     </div>
+
+//   <button class="btn btn-dark mt-3" onclick="showvalue();">SIGN UP</button>
+//   </form>
+//   </div>
+  
+// </div>
+
+// <p id="str1" class="text-primary"></p>
+// <p id="str2"></p>
+// <p id="str3"></p>
+
+//  function showvalue()
+
+//  {
+
+//      var txt1 = document.getElementById('txt1').value
+//      var txt2 = document.getElementById('txt2').value
+//      var txt3 = document.getElementById('txt3').value
+   
+//      document.getElementById('str1').innerHTML = txt1
+//      document.getElementById('str2').innerHTML = txt2
+//      document.getElementById('str3').innerHTML = txt3
+
+
+//  }
+
+
+
+//Exercise 43-48 Task # 6
+
+//Exercise 43-48 Task # 7
+
+
+
+// function UpdateRow()
+// {
+//   var btnedit =  document.getElementById('edit').value;
+//   var btnedit1 =  document.getElementById('edit1').value;
+//   var btnedit2 =  document.getElementById('edit2').value;
+//   var btnedit3 =  document.getElementById('edit3').value;
+
+//   var index = document.getElementById('index')
+//   var name = document.getElementById('name')
+//   var classes = document.getElementById('class')
+
+//   // index.innerHTML = btnedit
+//   name.innerHTML = btnedit1
+//   classes.innerHTML = btnedit2
+//   index.innerHTML = btnedit3
+//   index.textContent = btnedit1
+ 
+  
+
+
+
+
+// }
+
+// function DeleteRow()
+// {
+//   var td = event.target.parentNode
+//   var tr = td.parentNode
+//   tr.parentNode.removeChild(tr)
+// }
+
+
+var  main_content= document.getElementById('main-content')
+//var  main_content= document.getElementById('form-content')
+
+// var  main_content= document.getElementById('last-name')
+//document.write(main_content.nodeType)
+document.write(main_content.nodeType)
+//console.log(main_content.childNodes)
+
+
+var  render = document.getElementsByClassName('render')
+
+console.log(main_content.firstChild)
+console.log(main_content.lastChild)
+// var n ="" ;
+// for(var i =0; i<render.length; i++)
+// {
+//   n += render[i].name
+// }
+
+// console.log(main_content.children)
+// console.log(n)
+
+
+
+
+
+</script>
+
+</body>
+</html>
